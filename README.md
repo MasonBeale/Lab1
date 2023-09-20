@@ -1,2 +1,2 @@
 # Lab1
-Lab 1 COS 250
+Lab 1 COS 285
