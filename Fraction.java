@@ -1,8 +1,7 @@
-package labspack;
 
 import java.util.*;
 
-public class Fraction implements INumber<Fraction> {
+public class Fraction implements INumber<Fraction>, Comparable<Fraction>{
 	private int numerator;
 	private int denominator;
 	
@@ -116,7 +115,7 @@ public class Fraction implements INumber<Fraction> {
 	 * @param frac2 The second fraction
 	 * @return 0 if they are the same, 1 if this is greater, -1 otherwise
 	 */
-	public int compare(Fraction frac2) {
+	public int compareTo(Fraction frac2) {
 		if(this.hasSameValue(frac2)) {
 			return 0;
 		}else {
@@ -163,7 +162,7 @@ public class Fraction implements INumber<Fraction> {
 			 * if item before is greater swap them
 			 * start j one item lower to stay with item being inserted
 			 */
-			for(int j=i;j>0 && input[j-1].compare(input[j]) ==1;j--) {
+			for(int j=i;j>0 && input[j-1].compareTo(input[j]) ==1;j--) {
 				Fraction keep = input[j-1];
 				input[j-1]=input[j];
 				input[j]= keep;
