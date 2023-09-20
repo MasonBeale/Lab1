@@ -85,20 +85,20 @@ public class myArrayList {
 
 // 	}
 
-  /**
+  	/**
 	 * removes the first instance of a given item
 	 * @author Julia Kratzer 
 	 * @param input the item to be removed
 	 * @return the item that was removed
 	 */
-  public Fraction remove (Fraction input); {
+  	public Fraction remove (Fraction input); {
 	  for (int i = 0; i < myArray.length; i++) {
-        if (elements[i].hasSameValue(input)) {
-            Fraction removed = elements[i];
-        }
-        return removed;
+        	if (elements[i].hasSameValue(input)) {
+            		Fraction removed = elements[I];
+        	}
+        	return removed;
 	  }
-  }
+ 	}
 	/**
 	 * checks to see if a certain item is in the array
 	 * @author Mason Beale
