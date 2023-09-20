@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 public class myArrayList {
@@ -70,22 +69,36 @@ public class myArrayList {
 	 * @param input the item to be removed
 	 * @return the item that was removed
 	 */
-	public Fraction remove(Fraction input) {
-		for (int i = 0; i < myArray.length; i++) {
+// 	public Fraction remove(Fraction input) {
+// 		for (int i = 0; i < myArray.length; i++) {
 
-			if (myArray[i].compareTo(input) == 0) {
-				for (int j = i; j < myArray.length - 1; j++) {
-					myArray[j] = myArray[j + 1];
-				}
-				myArray[myArray.length - 1] = null;
-				currentIndex--;
-				return input;
-			}
-		}
-		return new Fraction(0, 0);
+// 			if (myArray[i].compareTo(input) == 0) {
+// 				for (int j = i; j < myArray.length - 1; j++) {
+// 					myArray[j] = myArray[j + 1];
+// 				}
+// 				myArray[myArray.length - 1] = null;
+// 				currentIndex--;
+// 				return input;
+// 			}
+// 		}
+// 		return new Fraction(0, 0);
 
-	}
+// 	}
 
+  /**
+	 * removes the first instance of a given item
+	 * @author Julia Kratzer 
+	 * @param input the item to be removed
+	 * @return the item that was removed
+	 */
+  public Fraction remove (Fraction input); {
+	  for (int i = 0; i < myArray.length; i++) {
+        if (elements[i].hasSameValue(input)) {
+            Fraction removed = elements[i];
+        }
+        return removed;
+	  }
+  }
 	/**
 	 * checks to see if a certain item is in the array
 	 * @author Mason Beale
